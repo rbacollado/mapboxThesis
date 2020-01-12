@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.mapboxthesis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gps"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gps"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Reading_Activity" />
+        <activity android:name=".temp1_chart" />
+        <activity android:name=".hum1_chart" />
+        <activity android:name=".co1_chart" />
+        <activity android:name=".co2_1_chart" />
+        <activity android:name=".dashboard1" />
+        <activity android:name=".temp2_chart" />
+        <activity android:name=".hum2_chart" />
+        <activity android:name=".co2_chart" />
+        <activity android:name=".co2_2_chart" />
+        <activity android:name=".dashboard2" />
+        <activity android:name=".pm_chart" />
+        <activity android:name=".pm2_chart" />
+        <activity android:name=".temp3_chart" />
+        <activity android:name=".hum3_chart" />
+        <activity android:name=".co3_chart" />
+        <activity android:name=".co2_3_chart" />
+        <activity android:name=".pm3_chart" />
+        <activity android:name=".dashboard3"></activity>
+    </application>
+
+</manifest>

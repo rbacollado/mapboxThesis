@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pure HTML / CSS Card Slider Demo</title>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+    <style>
+input[type="radio"] { display: none; }
+
+input[type="radio"]:checked + section { display: block; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+.container section {
+  display: none;
+  height: 250px;
+  padding: 15px;
+  background: #449df5;
+  color: #fff;
+  text-align: center;
+}
+
+.container section h1 {
+  margin-bottom: 0;
+  margin-top:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+
+
+.container section label {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5em;
+  bottom: 0;
+}
+
+.container section label:nth-child(odd) { right: 50px; }
+
+.container section label:nth-child(even) { left: 50px; }
+
+.container section > i {
+  font-size: 6em !important;
+  margin-bottom: 40px;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+<iframe width="100%" height="400" frameborder="1"
+        src="https://industrial.ubidots.com/app/dashboards/public/widget/XwDZvsiru7i6t6sImlg5KB0pTWg?embed=true"></iframe>
+
+<div class="container">
+
+    <input id="rad1" type="radio" name="rad" checked>
+    <section style="background: #66D48F"> <i class="mdi mdi-emoticon-happy-outline"></i>
+        <h1>Good (0 - 50 ppm)</h1>
+        <label for="rad2"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad6"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+    <input id="rad2" type="radio" name="rad">
+    <section style="background:#ffd700 "> <i class="mdi mdi-emoticon-neutral-outline"></i>
+        <h1>Moderate (51 - 100 ppm)</h1>
+        <label for="rad3"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad1"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+    <input id="rad3" type="radio" name="rad">
+    <section style="background:#fbc042"> <i class="mdi mdi-emoticon-sad-outline fa-frown-o"></i>
+        <h1>Unhealthy to sensitive groups (101 - 150 ppm)</h1>
+        <label for="rad4"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad2"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+    <input id="rad4" type="radio" name="rad">
+    <section style="background: #ED5565"> <i class="mdi mdi-heart-broken-outline"></i>
+        <h1>Unhealthy (151 - 200 ppm) </h1>
+        <label for="rad5"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad3"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+    <input id="rad5" type="radio" name="rad">
+    <section style="background: #800080"> <i class="mdi mdi-emoticon-dead-outline"></i>
+        <h1>Very Unhealthy (201 - 300 ppm)</h1>
+        <label for="rad6"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad4"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+    <input id="rad6" type="radio" name="rad">
+    <section style="background: #800000"> <i class="mdi mdi-biohazard"></i>
+        <h1>Hazardous (301 - 500 pm)</h1>
+        <label for="rad1"><i class="mdi mdi-arrow-right"></i></label>
+        <label for="rad5"><i class="mdi mdi-arrow-left"></i></label>
+    </section>
+
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
