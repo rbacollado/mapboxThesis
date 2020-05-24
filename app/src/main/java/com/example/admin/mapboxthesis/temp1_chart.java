@@ -1,10 +1,9 @@
 package com.example.admin.mapboxthesis;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 public class temp1_chart extends AppCompatActivity {
 
